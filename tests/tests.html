@@ -1,0 +1,515 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="initial-scale=1">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+
+        <title>NavarroTech Test</title>
+
+        <!-- Icon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./test.css" />
+
+        <!-- JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body style="background: #f0f2f5;">
+        <section class="section pb-6">
+            <div class="container is-max-fullhd">
+
+                <div class="block level-left pb-4">
+                    <a href="http://www.navarrotech.net/">
+                        <figure class="image is-128x128">
+                            <img src="./logo256.png" alt="NavarroTech"/>
+                        </figure>
+                    </a>
+                    <div class="ml-5">
+                        <h1 class="title is-size-1">NavarroTech - Bulma</h1>
+                        <p class="subtitle is-size-5">
+                            Upgraded [Bulma.io](http://bulma.io) package with extended functionality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Installation -->
+                <div class="block box">
+                    <h1 class="title is-size-2 has-text-primary">Installation</h1>
+
+                    <div class="content">
+                        <p>This is a <a href="https://nodejs.org/en/">Node.js</a> module available through the <a href="https://www.npmjs.com/">npm registry</a>.
+        
+                        <p>Before installing, <a href="https://nodejs.org/en/download/">download and install Node.js</a>.</p>
+                        <p>Node.js 0.10 or higher is required.</p>
+        
+                        <p>You can follow the <a href="https://bulma.io/documentation/customize/with-node-sass/">instructions on Bulma.io</a> for customizing and using our package.</p>
+        
+                        <p>Instead of importing 'bulma/bulma', you would import 'bulma-navarrotech'</p>
+                        <pre>@charset "utf-8";<br/>@import "../node_modules/bulma-navarrotech/bulma.sass";</pre>
+                    </div>
+                </div>
+
+                <!-- New Components -->
+                <div class="block box">
+                    <h1 class="title is-size-2 has-text-primary">New Components</h1>
+
+                    <div class="content">
+                        <h2><strong>Toggle Switch</strong></h2>
+
+                        <div class="columns">
+                            
+                            <div class="column">
+                                <pre>
+    &lt;label class="switch is-rounded is-primary"&gt;
+        &lt;input type="checkbox"&gt;
+        &lt;span&gt; class="slider"&gt;&lt;/span&gt;
+    &lt;/label&gt;</pre>
+                            </div>
+                            <div class="column">
+                                <div>
+                                    <div class="field">
+                                        <label class="switch is-rounded is-primary">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <label>I agree to the terms and conditions</label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="switch is-warning">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <label>Square checkbox</label>
+                                    </div>
+                                    <div class="field">
+                                        <label class="switch is-rounded is-danger">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <label>Unsubscribe me from all</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <h2><strong>Subcontainers</strong></h2>
+                        <p>This is useful for things like login windows, and single panelled sections.</p>
+                        <p>Supported sizes:</p>
+                        <ul>
+                            <li><strong class="has-text-primary">is-tablet:</strong> $tablet</li>
+                            <li><strong class="has-text-primary">is-desktop:</strong> $desktop</li>
+                            <li><strong class="has-text-primary">is-widescreen:</strong> $widescreen</li>
+                            <li><strong class="has-text-primary">is-large:</strong> $large (default: 1300px)</li>
+                            <li><strong class="has-text-primary">is-medium:</strong> $medium (default: 1000px)</li>
+                            <li><strong class="has-text-primary">is-small:</strong> $small (default: 900px)</li>
+                            <li><strong class="has-text-primary">is-mini:</strong> $small (default: 400px)</li>
+                            <li><strong class="has-text-primary">Column sizes:</strong> is-1, is-2, is-3, etc...</li>
+                        </ul>
+                        <div class="container is-max-widescreen pt-3 pb-7">
+                            <div class="subcontainer is-mini">
+                                <div class="box">
+                                    <div class="block">
+                                        <figure class="image is-128x128 is-centered">
+                                            <img src="./logo256.png" alt="NavarroTech"/>
+                                        </figure>
+                                    </div>
+                                    <div class="block has-text-centered">
+                                        <h1 class="title">Login</h1>
+                                        <h2 class="subtitle is-size-5 has-text-weight-light">It's good to see you again!</h2>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control has-icons-left">
+                                            <input class="input" type="email" placeholder="Email"/>
+                                            <span class="icon is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control has-icons-left">
+                                            <input class="input" type="password" placeholder="Password"/>
+                                            <span class="icon is-left">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="field level">
+                                        <div>
+                                            <label class="switch is-rounded is-primary">
+                                                <input type="checkbox">
+                                                <span class="slider"></span>
+                                            </label>
+                                            <label>Remember Me</label>
+                                        </div>
+                                        <a class="has-text-primary">Forgot Password?</a>
+                                    </div>
+                                    <div class="block buttons is-centered">
+                                        <button class="button is-primary is-fullwidth" type="button">
+                                            <span class="icon">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span>Login</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre>
+    &lt;div class="container is-max-widescreen"&gt;
+        &lt;div class="subcontainer is-medium"&gt;
+            &lt;div class="box"&gt;
+                &lt;h1 class="title has-text-centered">Hello World!&lt;/h1&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</pre>
+                    </div>
+                </div>
+
+                <!-- New Elements -->
+                <div class="block box">
+                    <h1 class="title is-size-2 has-text-primary">Elements</h1>
+
+                    <div class="content">
+                        <h2><strong>Multi Progress Bars</strong></h2>
+
+                        <div class="columns">
+                            
+                            <div class="column">
+                                <p>Put multiple progressbars into one!</p>
+                                <p>You can color each segment individually. Use <strong class="has-text-primary">style="width: 33%"</strong> to determine width.</p>
+                            </div>
+                            <div class="column">
+                                <pre>
+&lt;div class="multi-progress"&gt;
+    &lt;div class="progress-item is-primary" style="width: 50%"&gt;
+        &lt;span class="icon"&gt;
+            &lt;i class="fa-solid fa-jedi"&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        &lt;span&gt;Put text, icons, any HTML here!&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-item is-link" style="width: 25%"&gt;&lt;/div&gt;
+    &lt;div class="progress-item is-warning" style="width: 5%"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                            </div>
+                            
+                        </div>
+                        <div class="block">
+                            <p>Small</p>
+                            <div class="multi-progress is-small">
+                                <div class="progress-item is-primary" style="width: 15%"></div>
+                                <div class="progress-item is-link" style="width: 8%"></div>
+                                <div class="progress-item is-warning" style="width: 2%"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <p>Normal</p>
+                            <div class="multi-progress is-normal">
+                                <div class="progress-item is-primary" style="width: 33%">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-jedi"></i>
+                                    </span>
+                                    <span>Put text, icons, any HTML here!</span>
+                                </div>
+                                <div class="progress-item is-link" style="width: 20%"></div>
+                                <div class="progress-item is-warning" style="width: 4%"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <p>Large</p>
+                            <div class="multi-progress is-large">
+                                <div class="progress-item is-primary" style="width: 50%">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-jedi"></i>
+                                    </span>
+                                    <span>Put text, icons, any HTML here!</span>
+                                </div>
+                                <div class="progress-item is-link" style="width: 25%"></div>
+                                <div class="progress-item is-warning" style="width: 6%"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <p>Massive</p>
+                            <div class="multi-progress is-massive">
+                                <div class="progress-item is-primary" style="width: 60%">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-jedi"></i>
+                                    </span>
+                                    <span>Put text, icons, any HTML here!</span>
+                                </div>
+                                <div class="progress-item is-link" style="width: 25%"></div>
+                                <div class="progress-item is-warning" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React.js Compatibility -->
+                <div class="block box">
+                    <h1 class="title is-size-2 has-text-primary">React.js Compatibility</h1>
+
+                    <div class="content">
+                        <h2 class="has-text-centered"><strong>Menus</strong></h2>
+                    </div>
+
+                    <div class="columns">
+                        
+                        <div class="column">
+                            <h3 class="has-text-centered">The old way:</h3>
+                            <pre>
+    &lt;aside className="menu"&gt;
+        &lt;p&gt; className="menu-label"&gt;
+            General
+        &lt;/p&gt;
+        &lt;ul className="menu-list"&gt;
+            &lt;li&gt;&lt;a&gt;Dashboard&lt;/a&gt;&lt;/li&gt; // &lt;-- Not React Compatible!
+            &lt;li&gt;&lt;a&gt;Customers&lt;/a&gt;&lt;/li&gt; // &lt;-- Routers don't like &lt;a&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;</pre>
+                        </div>
+                        <div class="column">
+                            <h3 class="has-text-centered">The new way:</h3>
+                            <pre>
+    &lt;aside className="menu"&gt;
+        &lt;p className="menu-label"&gt;
+            General
+        &lt;/p&gt;
+        &lt;ul className="menu-list"&gt;
+            &lt;li&gt;&lt;div className="<span class="has-text-primary">menu-item</span>"&gt;Dashboard&lt;/div&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;div className="<span class="has-text-primary">menu-item</span>"&gt;Customers&lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;</pre>
+                        </div>
+                        
+                    </div>
+
+                    <div class="content">
+                        <h2 class="has-text-centered"><strong>Tabs</strong></h2>
+                    </div>
+
+                    <div class="columns">
+                        
+                        <div class="column">
+                            <h3 class="has-text-centered">The old way:</h3>
+                            <pre>
+        &lt;div className="tabs"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a&gt;Item A&lt;/a&gt;&lt;/li&gt; // &lt;-- Not React Compatible!
+                &lt;li&gt;&lt;a&gt;Item B&lt;/a&gt;&lt;/li&gt; // &lt;--  Routers don't like &lt;a&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;</pre>
+                        </div>
+                        <div class="column">
+                            <h3 class="has-text-centered">The new way:</h3>
+                            <pre>
+        &lt;div className="tabs"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;div className="<span class="has-text-primary">tab</span>"&gt;Item A&lt;/div&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;div className="<span class="has-text-primary">tab</span>"&gt;Item B&lt;/div&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;</pre>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+                <!-- More Modifiers -->
+                <div class="block box">
+                    <h1 class="title is-size-2 has-text-primary">More modifiers!</h1>
+
+                    <div class="content">
+                        <h2><strong>Image Addons</strong></h2>
+                        <div class="columns">
+                            
+                            <div class="column">
+                                <div>
+                                    <p>This is one of my personal favorites, I use this way too much.</p>
+                                    <p>You can now add class <strong class="has-text-primary">is-centered</strong> or  <strong class="has-text-primary">is-right</strong> to center your image elements!</p>
+                                    <pre>&lt;figure class="image is-256x256 is-centered"&gt;<br/>    &lt;img/&gt;<br/>&lt;/figure&gt;</pre>
+                                    
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div>
+                                    <figure class="image is-256x256 is-centered">
+                                        <p class="has-text-centered">is-centered</p>
+                                        <img src="https://lafeber.com/pet-birds/wp-content/uploads/2020/04/gamaliel-troubleson-u9PsLITXMCQ-unsplash-e1587001975887-300x271.jpg" alt="Centered Test"/>
+                                    </figure>
+                                    <figure class="image is-256x256 is-right">
+                                        <p class="has-text-centered">is-right</p>
+                                        <img src="https://media.istockphoto.com/photos/pair-of-solomon-island-eclectus-parrots-picture-id589555582?k=20&m=589555582&s=612x612&w=0&h=LhcL0rlnhbweUglkPJY7Q6uyaqoEFvyiS9eIVQGz0MQ=" alt="Centered Test"/>
+                                    </figure>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="columns is-vcentered">
+                            
+                            <div class="column">
+                                <figure class="image is-256x256 is-centered not-forced" style="background: black">
+                                    <img src="https://i.pinimg.com/736x/d4/5b/e7/d45be7c57c95312b3358fda7439c0b8c--british-accent-colorful-birds.jpg" alt="Centered Test"/>
+                                </figure>
+                            </div>
+                            <div class="column">
+                                <div>
+                                    <p>We also ran into a lot of issues in our code, where we needed to show a square or vertical image in a 16by9 container.</p>
+                                    <p>To help fix issues with images looking "squished" we added class <strong class="has-text-primary">"not-forced"</strong> which allows the image to preserve it's own ratio inside the image container.</p>
+                                    <pre>&lt;figure class="image is-16by9 not-forced"&gt;<br/>    &lt;img source="a-square-image" alt="I don't want to be stretched!"/&gt;<br/>&lt;/figure&gt;</pre>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <h2><strong>Box Addons</strong></h2>
+
+                        <div class="columns is-vcentered">
+                            <div class="column">
+                                <p>Add class <strong class="has-text-primary">is-centered</strong> or  <strong class="has-text-primary">is-right</strong> or <strong class="has-text-primary">is-left</strong><br/>to your boxes, and it will add width: fit-content</p>
+                            </div>
+                            <div class="column">
+                                <div class="box is-right">
+                                    <p>is-right</p>
+                                </div>
+                                <div class="box is-centered">
+                                    <p>is-centered</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns is-vcentered">
+                            
+                            <div class="column">
+                                <div class="box is-primary">
+                                    <p class="has-text-white">I am a primary box</p>
+                                </div>
+                                <div class="box is-primary is-dashed">
+                                    <p class="has-text-black">I am a primary dashed box</p>
+                                </div>
+                                <div class="box is-primary is-outlined">
+                                    <p class="has-text-black">I am a primary outlined box</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <p>You can also color the boxes using is-primary or is-{custom-color}, and it will set the background to that color!</p>
+                                <p class="has-text-grey">(Note: You will need to alter the text color yourself)</p>
+                            </div>
+                            
+                        </div>
+
+                        <h2><strong>Remove number arrows from number inputs </strong></h2>
+
+                        <div class="columns is-vcentered">
+                            
+                            <div class="column">
+                                <div class="field is-horizontal">
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <label class="label">Before</label>
+                                            <div class="control">
+                                                <input class="input" type="number" placeholder="Click me to preview"/>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">After</label>
+                                            <div class="control">
+                                                <input class="input no-arrows" type="number" placeholder="Click me to preview"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="column">
+                                <p>Adding class <strong class="has-text-primary">no-arrows</strong> will remove arrows from number inputs!</p>
+                                <pre>&lt;input type="number" class="input no-arrows"/&gt;</pre>
+                            </div>
+                            
+                        </div>
+
+                        <h2><strong>Improved level items</strong></h2>
+                        <div class="columns is-vcentered">
+                            
+                            <div class="column">
+                                <pre>
+    &lt;div class="level has-gap"&gt;
+        &lt;div class="box"&gt;
+            &lt;h1&gt;We are not touching anymore thanks to class 'has-gap!'&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="box"&gt;
+            &lt;h1&gt;We are not touching anymore thanks to class 'has-gap!'&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="level-right is-centered-mobile"&gt;
+            &lt;h2&gt;This text will be right on desktop but centered on mobile!&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </pre>
+                            </div>
+                            <div class="column">
+                                <div class="level">
+                                    <div class="box is-fullwidth m-0 is-danger"> <h1>Before has-gap</h1> </div>
+                                    <div class="box is-fullwidth m-0 is-danger"> <h1>Before has-gap</h1> </div>
+                                </div>
+                                <div class="level has-gap">
+                                    <div class="box is-fullwidth m-0 is-success"> <h1>After has-gap</h1> </div>
+                                    <div class="box is-fullwidth m-0 is-success"> <h1>After has-gap</h1> </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <h2><strong>More typography helpers</strong></h2>
+                        <div class="columns is-vcentered">
+                            
+                            <div class="column">
+                                <pre>
+    &lt;h3 class="title is-bold"&gt;
+        This text is font-weight bold!
+    &lt;/h3&gt;
+    &lt;h4 class="title is-black"&gt;
+        This text is font-weight black!
+    &lt;/h4&gt;
+    &lt;h5 class="title has-text-weight-black"&gt;
+        This text is also font-weight black!
+    &lt;/h5&gt;
+                                </pre>
+                            </div>
+                            <div class="column">
+                                <div>
+                                    <h2 class="title is-bold">
+                                        This text is font-weight bold!
+                                    </h2>
+                                    <h2 class="title is-black">
+                                        This text is font-weight black!
+                                    </h2>
+                                    <h2 class="title has-text-weight-black">
+                                        This text is also font-weight black!
+                                    </h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- People -->
+                <div class="block py-8">
+                    <div class="content has-text-centered">
+                        <h3>The original author of <a class="has-text-primary" href="https://bulma.io/">Bulma.io</a> is <a class="has-text-primary" href="https://jgthms.com/">Jeremy Thomas</a></h3>
+                        <h3>The current maintainer of navarrotech-bulma is <a class="has-text-primary" href="https://www.navarrotech.net/alex">Alex Navarro</a></h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+        <script>
+            $('.dropdown').on('click', '.dropdown-trigger', function(){ $(this).parent().toggleClass('is-active') })
+        </script>
+    </body>
+</html>

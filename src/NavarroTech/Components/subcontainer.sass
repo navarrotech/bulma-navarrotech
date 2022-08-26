@@ -1,0 +1,35 @@
+@import "../../Bulma/utilities/mixins"
+
+$large:  1300px !default
+$medium: 1000px !default
+$small:  800px !default
+
+.subcontainer
+    display: block
+    margin-left: auto
+    margin-right: auto
+    max-width: $desktop
+    width: 100%
+
+    &.is-fullwidth,
+    &.is-expanded
+        max-width: unset
+
+    &.is-large
+        max-width: $large
+
+    &.is-medium
+        max-width: $medium
+
+    &.is-small
+        max-width: $small
+
+    &.is-tablet
+        max-width: $tablet
+
+    &.is-mini
+        max-width: 400px
+
+    // &.is-1,
+    // &.is-size-1
+    //     max-width: calc(1 / 12) %

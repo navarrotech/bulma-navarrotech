@@ -1,0 +1,27 @@
+{
+    "name": "bulma-navarrotech",
+    "version": "1.0.1",
+    "description": "Bulma 0.9.4 but upgraded with more elements, components, and react friendly",
+    "main": "bulma.sass",
+    "homepage": "https://bulma.io",
+    "author": {
+        "name": "Alex Navarro @ NavarroTech",
+        "email": "alex@navarrocity.com",
+        "url": "https://www.navarrotech.com"
+    },
+    "scripts":{
+        "test" : "sass ./src/test.sass ./tests/test.css",
+        "build": "sass ./bulma.sass ./css/bulma.min.css --style compressed && sass ./bulma.sass ./css/bulma.css"
+    },
+    "license": "MIT",
+    "keywords": [
+        "css",
+        "sass",
+        "flexbox",
+        "responsive",
+        "framework"
+    ],
+    "devDependencies": {
+        "sass": "^1.54.3"
+    }
+}

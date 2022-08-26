@@ -1,0 +1,43 @@
+@import "../../Bulma/utilities/mixins"
+
+.multi-progress
+    display: flex
+    justify-content: flex-start
+    height: 2.5em
+    width: 100%
+    border-radius: 8px
+    overflow: hidden
+    background: #EDEDED
+
+    &.is-rounded
+        border-radius: 99999px
+
+    &.is-small
+        height: 1.8em
+
+    &.is-medium
+        height: 3em
+
+    &.is-large
+        height: 4em
+
+    &.is-massive
+        height: 5em
+
+    .progress-item
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+        color: white
+        text-align: center
+        padding: 0 1em
+        gap: 0.5em
+        
+        @each $name, $pair in $button-colors
+            $color: nth($pair, 1)
+            $color-invert: nth($pair, 2)
+
+            &.is-#{$name}
+                background: $color
