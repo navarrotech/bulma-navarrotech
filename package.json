@@ -1,6 +1,6 @@
 {
     "name": "bulma-navarrotech",
-    "version": "1.0.1",
+    "version": "1.1.1",
     "description": "Bulma 0.9.4 but upgraded with more elements, components, and react friendly",
     "main": "bulma.sass",
     "homepage": "https://bulma.io",
