@@ -1,27 +1,33 @@
 {
-    "name": "bulma-navarrotech",
-    "version": "1.1.1",
-    "description": "Bulma 0.9.4 but upgraded with more elements, components, and react friendly",
-    "main": "bulma.sass",
-    "homepage": "https://bulma.io",
-    "author": {
-        "name": "Alex Navarro @ NavarroTech",
-        "email": "alex@navarrocity.com",
-        "url": "https://www.navarrotech.com"
-    },
-    "scripts":{
-        "test" : "sass ./src/test.sass ./tests/test.css",
-        "build": "sass ./bulma.sass ./css/bulma.min.css --style compressed && sass ./bulma.sass ./css/bulma.css"
-    },
-    "license": "MIT",
-    "keywords": [
-        "css",
-        "sass",
-        "flexbox",
-        "responsive",
-        "framework"
-    ],
-    "devDependencies": {
-        "sass": "^1.54.3"
-    }
+  "name": "@navarrotech/bulma",
+  "version": "1.0.0",
+  "description": "Bulma 0.9.4 but upgraded with more elements, components, and react friendly",
+  "main": "bulma.sass",
+  "homepage": "https://bulma.io",
+  "author": "Alex Navarro @ NavarroTech <alex@navarrocity.com> (https://www.navarrotech.com)",
+  "scripts": {
+    "test": "sass ./src/test.sass ./tests/test.css",
+    "build": "sass ./bulma.sass ./css/bulma.min.css --style compressed && sass ./bulma.sass ./css/bulma.css"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "devDependencies": {
+    "sass": "^1.54.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navarrotech/bulma-navarrotech.git"
+  },
+  "bugs": {
+    "url": "https://github.com/navarrotech/bulma-navarrotech/issues"
+  }
 }
