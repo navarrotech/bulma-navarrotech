@@ -1,8 +1,10 @@
-@import "../../Bulma/utilities/mixins"
+@use 'sass:math'
 
-$large:  1300px !default
-$medium: 1000px !default
-$small:  800px !default
+$subcontainer-max: $tablet !default
+$subcontainer-divide: 6
+$subcontainer-large:  calc(math.div($subcontainer-max, $subcontainer-divide) * 5) !default
+$subcontainer-medium: calc(math.div($subcontainer-max, $subcontainer-divide) * 4) !default
+$subcontainer-small:  calc(math.div($subcontainer-max, $subcontainer-divide) * 3) !default
 
 .subcontainer
     display: block
@@ -11,25 +13,32 @@ $small:  800px !default
     max-width: $desktop
     width: 100%
 
-    &.is-fullwidth,
-    &.is-expanded
-        max-width: unset
+    // Standard Bulma Sizes
+    &.is-fullhd
+        max-width: $fullhd
 
-    &.is-large
-        max-width: $large
+    &.is-widescreen
+        max-width: $widescreen
 
-    &.is-medium
-        max-width: $medium
-
-    &.is-small
-        max-width: $small
+    &.is-desktop
+        max-width: $desktop
 
     &.is-tablet
         max-width: $tablet
 
+    // Sub sizes
+    &.is-large
+        max-width: $subcontainer-large
+
+    &.is-medium
+        max-width: $subcontainer-medium
+
+    &.is-small
+        max-width: $subcontainer-small
+
     &.is-mini
         max-width: 400px
 
-    // &.is-1,
-    // &.is-size-1
-    //     max-width: calc(1 / 12) %
+    &.is-fullwidth,
+    &.is-expanded
+        max-width: unset

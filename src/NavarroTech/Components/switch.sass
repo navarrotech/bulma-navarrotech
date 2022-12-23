@@ -1,6 +1,3 @@
-@import "../../Bulma/utilities/controls"
-@import "../../Bulma/utilities/mixins"
-
 $switch-background-color: #ccc !default
 
 .switch
@@ -26,7 +23,7 @@ $switch-background-color: #ccc !default
             -ms-transform: translateX(22px)
             transform: translateX(22px)
 
-    @each $name, $pair in $button-colors
+    @each $name, $pair in $colors
         $color: nth($pair, 1)
         $color-invert: nth($pair, 2)
 

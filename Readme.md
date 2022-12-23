@@ -22,7 +22,11 @@ You can follow the [`instructions on Bulma.io`](https://bulma.io/documentation/c
 Instead of importing 'bulma/bulma', you would import 'bulma-navarrotech'
 ```
 @charset "utf-8";
+// Import all extensions
 @import "../node_modules/bulma-navarrotech/bulma.sass";
+// Or just import specific extensions
+@import "../node_modules/bulma-navarrotech/src/NavarroTech/Addons/_all.sass";
+@import "../node_modules/bulma-navarrotech/src/NavarroTech/Components/subcontainer.sass";
 ```
 
 ## More modifiers!
